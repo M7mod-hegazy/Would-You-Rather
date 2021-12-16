@@ -1,13 +1,229 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.login-card {
+  width: 30%;
+  margin: 30vh auto;
+  border-radius: 6px;
+  line-height: 3;
+  border: 3px solid #0d6efd;
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-name {
+  font-family: cursive;
+}
+
+.login-card .form-select {
+  border: 1px solid #0d6efd;
+}
+
+.login-card .form-select:focus {
+
+  border: 1px solid #0d6efd;
+  
+}
+
+.login-card .login-btn,
+.login-card .login-btn:disabled,
+.new-ques button,
+.new-ques button:disabled,
+.ques-list .ques-peak a button.btn,
+.question button:disabled,
+.question button {
+  background: #0d6efd;
+  border: none;
+}
+
+.login-card .login-btn:hover,
+.new-ques button:hover,
+.ques-list .ques-peak a button.btn:hover,
+.question button:hover,
+.login-card .login-btn:focus,
+.new-ques button:focus,
+.ques-list .ques-peak a button.btn:focus
+.question button:focus {
+ color: #fff;
+  background-color: #0a58ca;
+  border-color: #0a58ca;
+
+}
+
+nav.navbar {
+  border-bottom: 1px solid #0d6efd;
+ 
+}
+
+ul.nav-list {
+  margin: 0;
+  padding: 0
+}
+
+.avatar {
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.authed-user span {
+  color: #fff
+}
+
+.authed-user .user-name {
+  color: #000;
+  font-weight: 500;
+  margin-right: 30px
+}
+
+.nav-list .nav-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-list .nav-item a {
+  background-color: #0d6efd;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #fff;
+}
+
+
+.all-questions,
+.leaderboard {
+  border: 3px solid #0d6efd;
+
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.all-questions .nav-tabs {
+  padding-right: 0
+}
+
+.all-questions .nav-tabs .nav-item {
+  width: 50%;
+}
+
+.all-questions .nav-tabs .nav-item .nav-link {
+  width: 100%;
+  padding: 15px 0;
+  color: #0d6efd
+}
+
+.all-questions .nav-tabs .nav-item .nav-link.active {
+  background-color: #0d6efd;
+  color: #fff
+}
+
+.ques-list {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.ques-list .user-card .card-box {
+  border: 1px solid #0d6efd
+}
+
+.ques-list .user-card .card-header,
+.question .card .card-header {
+  background-color: #0d6efd;
+  color: #fff
+}
+
+.ques-list .card-body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-avatar {
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 10px  
+}
+
+.ques-list .ques-peak {
+  border: none;
+}
+
+.ques-list .ques-peak a {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.new-ques {
+  padding: 30px;
+  width: 70%;
+  margin: 50px auto 0;
+  border: 3px solid #0d6efd;
+  
+  border-radius: 4px;
+}
+
+.new-ques .form-control {
+  border: 1px solid #0d6efd;
+}
+
+.new-ques .form-control:focus {
+  border: 1px solid #0d6efd;
+
+}
+
+.question { 
+  width: 90%
+}
+
+.question .answer-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.question .answer-section .answer,
+.question .answer .my-3.container {
+  margin-right: 40px;
+}
+
+.question .answer .my-3.container > *:not(:last-child) {
+  margin-bottom: 10px
+}
+
+.question .form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  
+}
+
+.question .form-check-input:hover {
+  cursor: pointer;
+}
+
+.question .results .card-body {
+  padding: 1.5rem 1rem;
+}
+
+.question .results .card-body span.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.question .results .card-body .progress .progress-bar {
+  background-color: #0d6efd
+}
+
+.leaderboard .board-content {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.leaderboard .board-content .questions-count,
+.leaderboard .board-content .score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leaderboard .board-content .score {
+  background: #0d6efd;
+    border-radius: 50%;
+    width: 130px;
+    color: #fff;
 }
