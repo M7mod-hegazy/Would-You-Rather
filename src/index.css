@@ -1,53 +1,58 @@
-.login-card {
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+html {
+  background-color:#6998AB
+}
+.logCard {
   width: 30%;
   margin: 30vh auto;
   border-radius: 6px;
   line-height: 3;
-  border: 3px solid #0d6efd;
+  border: 3px solid #406882;
  
 }
 
-.app-name {
-  font-family: cursive;
+.logCard .form-select {
+  border: 1px solid #406882;
 }
 
-.login-card .form-select {
-  border: 1px solid #0d6efd;
-}
+.logCard .form-select:focus {
 
-.login-card .form-select:focus {
-
-  border: 1px solid #0d6efd;
+  border: 1px solid #406882;
   
 }
 
-.login-card .login-btn,
-.login-card .login-btn:disabled,
-.new-ques button,
-.new-ques button:disabled,
+.logCard .login-btn,
+.logCard .login-btn:disabled,
+.addQuestion button,
+.addQuestion button:disabled,
 .ques-list .ques-peak a button.btn,
 .question button:disabled,
 .question button {
-  background: #0d6efd;
+  background: #406882;
   border: none;
 }
 
-.login-card .login-btn:hover,
-.new-ques button:hover,
+.logCard .login-btn:hover,
+.addQuestion button:hover,
 .ques-list .ques-peak a button.btn:hover,
 .question button:hover,
-.login-card .login-btn:focus,
-.new-ques button:focus,
+.logCard .login-btn:focus,
+.addQuestion button:focus,
 .ques-list .ques-peak a button.btn:focus
 .question button:focus {
  color: #fff;
-  background-color: #0a58ca;
-  border-color: #0a58ca;
+  background-color: #1A374D;
+  border-color: #1A374D;
 
 }
 
 nav.navbar {
-  border-bottom: 1px solid #0d6efd;
+  border-bottom: 1px solid #406882;
+  background: #1A374D
  
 }
 
@@ -67,7 +72,7 @@ ul.nav-list {
 }
 
 .authed-user .user-name {
-  color: #000;
+
   font-weight: 500;
   margin-right: 30px
 }
@@ -78,17 +83,26 @@ ul.nav-list {
 }
 
 .nav-list .nav-item a {
-  background-color: #0d6efd;
+  background-color: transparent;
   padding: 8px;
   text-decoration: none;
   border-radius: 4px;
-  color: #fff;
+  color: #406882;
+  transition: all 0.2s ease
+}
+.nav-list .nav-item a.active {
+  background-color: #406882;
+  color: #ffffff;
+}
+.nav-list .nav-item a:hover {
+  background-color: #406882;
+  color: #ffffff;
 }
 
 
 .all-questions,
 .leaderboard {
-  border: 3px solid #0d6efd;
+  border: 3px solid #406882;
 
   border-radius: 6px;
   margin-top: 30px;
@@ -105,11 +119,11 @@ ul.nav-list {
 .all-questions .nav-tabs .nav-item .nav-link {
   width: 100%;
   padding: 15px 0;
-  color: #0d6efd
+  color: #406882
 }
 
 .all-questions .nav-tabs .nav-item .nav-link.active {
-  background-color: #0d6efd;
+  background-color: #406882;
   color: #fff
 }
 
@@ -119,16 +133,17 @@ ul.nav-list {
 }
 
 .ques-list .user-card .card-box {
-  border: 1px solid #0d6efd
+  border: 1px solid #406882
 }
 
 .ques-list .user-card .card-header,
 .question .card .card-header {
-  background-color: #0d6efd;
+  background-color: #406882;
   color: #fff
 }
 
 .ques-list .card-body {
+  background-color:#B1D0E0;
   display: flex;
   justify-content: space-around;
 }
@@ -140,6 +155,8 @@ ul.nav-list {
 }
 
 .ques-list .ques-peak {
+  background-color:#B1D0E0;
+
   border: none;
 }
 
@@ -148,29 +165,34 @@ ul.nav-list {
   margin: 0 auto;
 }
 
-.new-ques {
+.addQuestion {
   padding: 30px;
   width: 70%;
   margin: 50px auto 0;
-  border: 3px solid #0d6efd;
+  border: 3px solid #406882;
   
   border-radius: 4px;
 }
 
-.new-ques .form-control {
-  border: 1px solid #0d6efd;
+.addQuestion .form-control {
+  border: 1px solid #406882;
 }
 
-.new-ques .form-control:focus {
-  border: 1px solid #0d6efd;
+.addQuestion .form-control:focus {
+  border: 1px solid #406882;
 
 }
 
 .question { 
   width: 90%
 }
+.card-body {
+  background-color:#B1D0E0;
 
+}
 .question .answer-section {
+  background-color:#B1D0E0;
+
   display: flex;
   justify-content: space-around;
 }
@@ -185,8 +207,8 @@ ul.nav-list {
 }
 
 .question .form-check-input:checked {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #406882;
+  border-color: #406882;
   
 }
 
@@ -205,7 +227,7 @@ ul.nav-list {
 }
 
 .question .results .card-body .progress .progress-bar {
-  background-color: #0d6efd
+  background-color: #406882
 }
 
 .leaderboard .board-content {
@@ -215,15 +237,18 @@ ul.nav-list {
 }
 
 .leaderboard .board-content .questions-count,
-.leaderboard .board-content .score {
+.leaderboard .board-content .total {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.leaderboard .board-content .score {
-  background: #0d6efd;
-    border-radius: 50%;
+.leaderboard .board-content .total {
+  background: #406882;
+    border-radius: 10px;
     width: 130px;
     color: #fff;
+}
+.app {
+  background: #6998AB;
 }
